@@ -1,0 +1,140 @@
+
+
+.mobile {
+    background-image: url("/assets/media/pictures/iphone-optimised.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 325px;
+    height: 75%;
+    margin-top: 200px;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+
+.laptop {
+    background-image: url("/assets/media/pictures/laptop-screen-optimised.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 650px;
+    height: 100%;
+
+    position: absolute;
+    left: 70%;
+    margin-top: 310px;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.desktop {
+    background-image: url("/assets/media/pictures/large-screen-optimised.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 800px;
+    height: 100%;
+
+    position: absolute;
+    left: 35%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.mobile iframe {
+    width: 560px;
+    height: 1220px;
+    top: 11px;
+    left: 59px;
+    border-radius: 4rem;
+    overflow-y: hidden;
+}
+
+.laptop iframe {
+    width: 1680px;
+    height: 1060px;
+    top: 36px;
+    left: 81px;
+    transform: scale(0.289);
+    -webkit-transform: scale(0.289);
+    -o-transform: scale(0.289);
+    -ms-transform: scale(0.289);
+    -moz-transform: scale(0.289);
+    transform-origin: top left;
+    -webkit-transform-origin: top left;
+    -o-transform-origin: top left;
+    -ms-transform-origin: top left;
+    -moz-transform-origin: top left;
+}
+
+.desktop iframe {
+    left: 39px;
+    top: 53px;
+    width: 1980px;
+    height: 1206px;
+    transform: scale(0.3681);
+    -webkit-transform: scale(0.3681);
+    -o-transform: scale(0.3681);
+    -ms-transform: scale(0.3681);
+    -moz-transform: scale(0.3681);
+    transform-origin: top left;
+    -webkit-transform-origin: top left;
+    -o-transform-origin: top left;
+    -ms-transform-origin: top left;
+    -moz-transform-origin: top left;
+}
+
+iframe {
+    transform: scale(0.371);
+    -webkit-transform: scale(0.371);
+    -o-transform: scale(0.371);
+    -ms-transform: scale(0.371);
+    -moz-transform: scale(0.371);
+    transform-origin: top left;
+    -webkit-transform-origin: top left;
+    -o-transform-origin: top left;
+    -ms-transform-origin: top left;
+    -moz-transform-origin: top left;
+
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: #fff;
+    border-color: #000;
+
+    overflow: hidden;
+}
+
+
+.mobile {
+    display: none;
+}
+
+
+@media only screen and (max-width: 1440px) {
+
+    .desktop {
+        display: none;
+    }
+
+    .laptop {
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+}
+
+
+@media only screen and (max-width: 800px) {
+
+    .laptop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+}
+
+

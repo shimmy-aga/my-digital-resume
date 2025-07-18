@@ -1,0 +1,139 @@
+:root {
+    --height-and-width-outer: 100px;
+    --height-and-width-inner: 87px;
+
+    /* Clip Path Inner is always 50% of Clip Path Outer - if this is changed there will be styling problems */
+    --clip-path-outer: 100px;
+    --clip-path-inner: 50px;
+
+    --margin-top-and-left-inner: 6.5px;
+}
+
+
+/* ----------------------------------------------------------------------------------------------- */
+
+
+.circle-wrap {
+    margin: 20px auto;
+    width: var(--height-and-width-outer);
+    height: var(--height-and-width-outer);
+    background: rgba(106, 230, 188, 0.1);
+    border-radius: 50%;
+}
+  
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+    width: var(--height-and-width-outer);
+    height: var(--height-and-width-outer);
+    position: absolute;
+    border-radius: 50%;
+}
+  
+.circle-wrap .inside-circle {
+    width: var(--height-and-width-inner);
+    height: var(--height-and-width-inner);
+    border-radius: 50%;
+    background: var(--secondary-color);
+    line-height: calc(var(--height-and-width-inner) + 0.525rem);
+    text-align: center;
+    margin-top: var(--margin-top-and-left-inner);
+    margin-left: var(--margin-top-and-left-inner);
+    position: absolute;
+    z-index: 100;
+}
+
+.skill-wrapper  {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    max-width: 550px;
+    min-width: 250px;
+    margin: 25px 50px 25px 0px;
+    text-align: center;
+}
+
+.skills-wrap-wrapper {
+    position: relative;
+    display: inline-block;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.circle-wrap .circle .mask {
+    clip: rect(0px, var(--clip-path-outer), var(--clip-path-outer), var(--clip-path-inner));
+}
+  
+.circle-wrap .circle .mask .fill {
+    clip: rect(0px, var(--clip-path-inner), var(--clip-path-outer), 0px);
+    background-color: var(--accent-color);
+}
+
+.p53 {
+    transform: rotate(95.4deg);
+}
+
+.p61 {
+    transform: rotate(109.8deg);
+}
+
+.p71 {
+    transform: rotate(127.8deg);
+}
+
+.p73 {
+    transform: rotate(131.4deg);
+}
+
+.p78 {
+    transform: rotate(140.4deg);
+}
+
+.p82 {
+    transform: rotate(147.6deg);
+}
+
+.p86 {
+    transform: rotate(154.8deg);
+}
+
+.p87 {
+    transform: rotate(156.6deg);
+}
+
+.p89 {
+    transform: rotate(160.2deg);
+}
+
+.p91 {
+    transform: rotate(163.8deg);
+}
+
+.p92 {
+    transform: rotate(165.6deg);
+}
+
+.p94 {
+    transform: rotate(169.2deg);
+}
+
+.p96 {
+    transform: rotate(172.8deg);
+}
+
+.skill-wrapper h3 {
+    font-size: 1.6rem;
+}
+
+@media screen and (max-width: 667px) {
+    
+    .skills-wrap-wrapper {
+        text-align: center;
+    }
+
+    .skill-wrapper {
+        margin: 25px 0px;
+    }
+
+}
+
+  
